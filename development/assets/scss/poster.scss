@@ -1,70 +1,92 @@
-.poster{
-background-image: url(https://imgix.bustle.com/uploads/image/2021/2/8/496d562b-9a4e-4b6d-b2d8-f1fa3832a6b7-space-sweepers-ending-explained.png?w=2000&h=640&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.6906666666666667&fp-y=0.43601895734597157&blend=000000&blendAlpha=45&blendMode=normal);
-background-size: cover;
-height: 500px;
-display: flex;
-flex-direction: column;
-padding-left:40px;
-align-items: flex-start;
-justify-content: flex-end;
-    background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
-@include mq(mobile, max) {
-    &{
-       justify-content: center;
+.poster {
+    background-image: url(https://imgix.bustle.com/uploads/image/2021/2/8/496d562b-9a4e-4b6d-b2d8-f1fa3832a6b7-space-sweepers-ending-explained.png?w=2000&h=640&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.6906666666666667&fp-y=0.43601895734597157&blend=000000&blendAlpha=45&blendMode=normal);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include mq(mobile, max) {
+        & {
+            justify-content: center;
+        }
+
     }
 
-}
 
 
 
 
+    &__article {
+        width: 100%;
+        color: $txt-color;
+        margin-bottom: 50px;
 
-        &__article{
-            width: 650px;
-            color: $txt-color;
-            margin-bottom: 50px;
-            
-           
-            
 
-        }
-        &__title{
-            font-size: 60px;
-            text-transform: capitalize;
-            @include mq(mobile, max) {
-                &{
-                    font-size: 36px;
-                    width: 120px;
-                }
-        
+
+
+    }
+
+    &__title {
+        font-size: 60px;
+        text-transform: capitalize;
+
+        @include mq(mobile, max) {
+            & {
+                font-size: 48px;
+                width: 120px;
             }
-        }
-        &__content{
-            margin-top: 20px;
-            font-size: 24px;
-            @include mq(mobile, max) {
-                &{
-                    display: none;
-                }
-        
-            }
-        }
 
-        &__rating{
-            margin-bottom: 50px;
-            display: flex;
-            flex-direction: row;
         }
-        &__star{
-            color: $txt-color; 
-            font-size: 20px; 
+    }
+
+    &__content {
+        margin-top: 20px;
+        font-size: 24px;
+
+        @include mq(mobile, max) {
+            & {
+                display: none;
+            }
+
         }
-        &__value{
-            color: $txt-color; 
-              font-size: 20px;
-              margin-left: 10px;
-              font-weight: 700;
+    }
+
+    &__rating {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__star {
+        color: $txt-color;
+        font-size: 24px;
+
+        @include mq(mobile, max) {
+            & {
+                font-size: 36px;
+            }
+
         }
+        
+    }
+
+    &__value {
+        color: $txt-color;
+        font-size: 24px;
+        margin-left: 10px;
+        font-weight: 700;
+        @include mq(mobile, max) {
+            & {
+                font-size: 36px;
+            }
+
+        }
+    }
+
 }

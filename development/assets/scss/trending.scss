@@ -74,7 +74,7 @@
     &__about{
        display: flex;
        flex-direction: column;
-      padding: 15px;
+      padding: 10px;
       
     }
 
@@ -87,7 +87,7 @@
         }
     }
     &__date{
-        margin-top: 3px;
+        margin-top: 5px;
         @include mq(mobile, max) {
             &{
                 font-size: 10px;

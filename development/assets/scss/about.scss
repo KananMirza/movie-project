@@ -25,8 +25,15 @@
         @include mq(mobile, max) {
             &{
                 flex-direction: column;
-                
-                right: 100px;
+               
+            }
+    
+        }
+        @include mq(iphone, max) {
+            &{
+                flex-direction: column;
+                left: 40px;
+               
             }
     
         }
@@ -141,6 +148,14 @@
                 &{
                     width: 300px;
                     padding-left: 100px;
+                }
+        
+            }
+            @include mq(iphone, max) {
+                &{
+                    
+                    padding-left: 50px;
+                   
                 }
         
             }
