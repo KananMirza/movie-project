@@ -11,17 +11,6 @@
     background-size: cover;
     background-position: center;
 
-    @include mq(mobile, max) {
-        & {
-            justify-content: center;
-        }
-
-    }
-
-
-
-
-
     &__article {
         width: 100%;
         color: $txt-color;
@@ -36,7 +25,7 @@
         font-size: 60px;
         text-transform: capitalize;
 
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             & {
                 font-size: 48px;
                 width: 120px;
@@ -67,7 +56,7 @@
         color: $txt-color;
         font-size: 24px;
 
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             & {
                 font-size: 36px;
             }
@@ -81,7 +70,7 @@
         font-size: 24px;
         margin-left: 10px;
         font-weight: 700;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             & {
                 font-size: 36px;
             }

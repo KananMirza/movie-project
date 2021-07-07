@@ -22,14 +22,14 @@
         position: absolute;
         top: 340px;
         left: 80px;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 flex-direction: column;
                
             }
     
         }
-        @include mq(iphone, max) {
+        @include mq(mobile, max) {
             &{
                 flex-direction: column;
                 left: 40px;
@@ -60,7 +60,7 @@
 
     &__title{
         font-size: 36px;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 font-size: 20px;    
                 padding-right: 5px;   
@@ -80,7 +80,7 @@
 
         &-item {
             margin-right: 25px;
-            @include mq(mobile, max) {
+            @include mq(tablet, max) {
                 &{
                   margin-right: 15px;
                 }
@@ -114,7 +114,7 @@
             transition: 0.5s;
         }
 
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
               width: 75px;
               font-size: 10px;
@@ -131,7 +131,7 @@
         background-color: $tg-bgcolor;
         color: $txt-color;
         display: flex;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 padding-top: 75px;
                 
@@ -144,14 +144,14 @@
             font-size: 36px;
             padding-top: 200px;
             padding-left: 70px;
-            @include mq(mobile, max) {
+            @include mq(tablet, max) {
                 &{
                     width: 300px;
                     padding-left: 100px;
                 }
         
             }
-            @include mq(iphone, max) {
+            @include mq(mobile, max) {
                 &{
                     
                     padding-left: 50px;
@@ -163,7 +163,7 @@
         }
     }
     &__subtitle{
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 font-size: 15px;
             }
@@ -172,7 +172,7 @@
     }
     
 
-    @include mq(mobile, max) {
+    @include mq(tablet, max) {
         &__article{
             font-size: 15px;
             margin-top: 20px;

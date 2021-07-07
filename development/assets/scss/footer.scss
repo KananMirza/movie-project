@@ -13,11 +13,19 @@
         }
 
     }
+    @include mq(tablet, max) {
+        &{
+            flex-direction: column;
+            background-color: $tg-licolor;
+            padding: 30px;
+        }
+
+    }
     
     &__creator{
         width: 300px;
         
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
               
                 width: 100%;
@@ -26,9 +34,11 @@
     
         }
 
+        
+
         &-date{
             font-size: 48px;
-            @include mq(mobile, max) {
+            @include mq(tablet, max) {
                 &{
                     
                    font-size: 15px;
@@ -49,7 +59,7 @@
     }
 
     &__social{
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 margin-top: 20px;
                 text-align: center;
@@ -78,7 +88,7 @@
 
     &__subtitle{
         font-size: 24px;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 font-size: 25px;
             }
@@ -88,7 +98,7 @@
 
     &__contact{
      
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 margin-top: 20px;
                 text-align: center;
@@ -108,7 +118,7 @@
     &__link{
         text-decoration: none;
         color: $tg-color;
-        @include mq(mobile, max) {
+        @include mq(tablet, max) {
             &{
                 font-size: 14px;
             }
