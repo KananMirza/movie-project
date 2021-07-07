@@ -76,6 +76,9 @@
   padding-left: 40px;
   align-items: flex-start;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 419px) {
   .poster {
@@ -215,7 +218,7 @@
 }
 @media only screen and (max-width: 419px) {
   .footer__creator {
-    width: 150px;
+    width: 100%;
     text-align: center;
   }
 }
@@ -289,13 +292,14 @@
 
 .about__poster {
   background-image: url(https://d3dh6of9cnaq4t.cloudfront.net/Pictures/480x270//6/3/0/15630_intl_wdwmn2_vert_tsr_intl_2764x4096widescreencropuseaspicturelayout_396346.jpg);
-  background-size: cover;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   position: relative;
   color: white;
+  background-size: cover;
+  background-position: center;
 }
 .about__movie {
   display: flex;
@@ -317,15 +321,19 @@
 .about__trailer {
   padding-bottom: 25px;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .about__title {
   font-size: 36px;
 }
 @media only screen and (max-width: 419px) {
   .about__title {
-    font-size: 24px;
-    margin-left: 80px;
-    margin-top: 40px;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-top: 20px;
   }
 }
 .about__rating {
@@ -335,6 +343,11 @@
 }
 .about__rating-item {
   margin-right: 25px;
+}
+@media only screen and (max-width: 419px) {
+  .about__rating-item {
+    margin-right: 15px;
+  }
 }
 .about__icon {
   font-size: 20px;
@@ -358,14 +371,22 @@
   opacity: 0.8;
   transition: 0.5s;
 }
+@media only screen and (max-width: 419px) {
+  .about__btn {
+    width: 75px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
 .about__content {
   height: 500px;
   background-color: black;
   color: white;
+  display: flex;
 }
 @media only screen and (max-width: 419px) {
   .about__content {
-    padding-top: 100px;
+    padding-top: 75px;
   }
 }
 .about__content-card {
@@ -375,6 +396,12 @@
   padding-left: 70px;
 }
 @media only screen and (max-width: 419px) {
+  .about__content-card {
+    width: 300px;
+    padding-left: 100px;
+  }
+}
+@media only screen and (max-width: 419px) {
   .about__subtitle {
     font-size: 15px;
   }
@@ -382,10 +409,7 @@
 @media only screen and (max-width: 419px) {
   .about__article {
     font-size: 15px;
-    width: 300px;
-  }
-  .about__card {
-    padding-left: 20px;
+    margin-top: 20px;
   }
 }
 

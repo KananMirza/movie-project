@@ -2,13 +2,15 @@
 
     &__poster {
         background-image: url(https://d3dh6of9cnaq4t.cloudfront.net/Pictures/480x270//6/3/0/15630_intl_wdwmn2_vert_tsr_intl_2764x4096widescreencropuseaspicturelayout_396346.jpg);
-        background-size: cover;
+      
         height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         position: relative;
         color: $txt-color;
+        background-size:cover;
+        background-position:center;
 
     }
 
@@ -41,15 +43,21 @@
     &__trailer {
         padding-bottom: 25px;
         padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
 
     &__title{
         font-size: 36px;
         @include mq(mobile, max) {
             &{
-                font-size: 24px;
-                margin-left: 80px;
-                margin-top: 40px;
+                font-size: 20px;    
+                padding-right: 5px;   
+                padding-top: 20px;        
             }
     
         }
@@ -59,10 +67,18 @@
         display: flex;
         flex-direction: row;
         margin-top: 10px;
+       
+        
         
 
         &-item {
             margin-right: 25px;
+            @include mq(mobile, max) {
+                &{
+                  margin-right: 15px;
+                }
+        
+            }
         }
     }
 
@@ -90,15 +106,29 @@
             opacity: 0.8;
             transition: 0.5s;
         }
+
+        @include mq(mobile, max) {
+            &{
+              width: 75px;
+              font-size: 10px;
+              font-weight: bold;
+
+            }
+    
+        }
+        
     }
 
     &__content{
         height: 500px;
         background-color: $tg-bgcolor;
         color: $txt-color;
+        display: flex;
         @include mq(mobile, max) {
             &{
-                padding-top: 100px;
+                padding-top: 75px;
+                
+            
             }
     
         }
@@ -107,8 +137,14 @@
             font-size: 36px;
             padding-top: 200px;
             padding-left: 70px;
-           
-
+            @include mq(mobile, max) {
+                &{
+                    width: 300px;
+                    padding-left: 100px;
+                }
+        
+            }
+            
         }
     }
     &__subtitle{
@@ -124,10 +160,8 @@
     @include mq(mobile, max) {
         &__article{
             font-size: 15px;
-            width: 300px;
-        }
-        &__card{
-            padding-left: 20px;
+            margin-top: 20px;
+            
         }
 
     }
