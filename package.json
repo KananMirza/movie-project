@@ -1,0 +1,22 @@
+{
+  "name": "movie-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve ./development/*.njk",
+    "build": "parcel build ./development/*.njk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.3",
+    "parcel": "^2.0.0-beta.3.1",
+    "parcel-plugin-nunjucks": "^2.2.2"
+  }
+}

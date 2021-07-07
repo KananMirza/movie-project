@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    width: 100%;
+}
+
+@import './mixing/responsive.scss';
+@import './variables/variables.scss';
+@import './header.scss';
+@import './poster.scss';
+@import './trending.scss';
+@import './footer.scss';
+@import './about.scss';
+@import './search.scss';
+@import './result.scss';

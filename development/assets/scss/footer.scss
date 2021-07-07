@@ -1,0 +1,117 @@
+.footer{
+    background-color: $tg-bgcolor;
+    color: $txt-color;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include mq(mobile, max) {
+        &{
+            flex-direction: column;
+            background-color: $tg-licolor;
+            padding: 30px;
+        }
+
+    }
+    
+    &__creator{
+        width: 300px;
+        
+        @include mq(mobile, max) {
+            &{
+              
+                width: 150px;
+                text-align: center;
+            }
+    
+        }
+
+        &-date{
+            font-size: 48px;
+            @include mq(mobile, max) {
+                &{
+                    
+                   font-size: 15px;
+                   text-align: center;
+                    
+                }
+        
+            }
+        }
+    }
+    &__author{
+        text-decoration: none;
+        color: $tg-color;
+        &:hover{
+            color: $ft-color;
+            transition: 0.4s;
+        }
+    }
+
+    &__social{
+        @include mq(mobile, max) {
+            &{
+                margin-top: 20px;
+                text-align: center;
+            }
+    
+        }
+        &-icon{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-right: 15px;
+            color: $tg-color;
+
+            &:hover{
+                transform: scale(1.5);
+                transition: 0.5s;
+            }
+            &--red:hover{
+                color: red;
+                
+            }
+            &--blue:hover{
+                color: blue;
+            }
+        }
+    }
+
+    &__subtitle{
+        @include mq(mobile, max) {
+            &{
+                font-size: 25px;
+            }
+    
+        }
+    }      
+
+    &__contact{
+     
+        @include mq(mobile, max) {
+            &{
+                margin-top: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+    
+        }
+        &-icon{
+            color: $ft-color;
+        }
+    }
+    &__item{
+       list-style: none;
+       margin-top: 10px;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: $tg-color;
+        @include mq(mobile, max) {
+            &{
+                font-size: 14px;
+            }
+    
+        }
+    }
+}

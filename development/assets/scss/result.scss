@@ -1,0 +1,45 @@
+.result{
+    display: flex;
+    flex-direction: row;
+    background-color: $tg-bgcolor;
+
+    &__films{
+        color:$txt-color;
+        padding-left: 70px;
+    }
+
+    &__title{
+        font-size: 48px;
+        margin-top: 50px;
+    }
+
+    &__link{
+        text-decoration: none;
+        &:hover{
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    }
+    &__item{
+        width: 200px;
+        color: $tg-color;
+        background-color: $tg-licolor;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        margin-top: 35px;
+    }
+    &__about{
+        display: flex;
+        flex-direction: column;
+       padding: 15px;
+       
+     }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+}
