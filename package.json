@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve ./development/*.njk",
-    "build": "parcel build ./development/*.njk --no-minify"
+    "build": "parcel build ./development/*.njk"
   },
   "keywords": [],
   "author": "",
