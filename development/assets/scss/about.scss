@@ -32,7 +32,7 @@
         @include mq(mobile, max) {
             &{
                 flex-direction: column;
-                left: 40px;
+                left: 60px;
                
             }
     
@@ -154,7 +154,7 @@
             @include mq(mobile, max) {
                 &{
                     
-                    padding-left: 50px;
+                    padding-left: 70px;
                    
                 }
         

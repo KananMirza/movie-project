@@ -333,7 +333,7 @@
 @media only screen and (max-width: 649px) {
   .about__movie {
     flex-direction: column;
-    left: 40px;
+    left: 60px;
   }
 }
 .about__image {
@@ -424,7 +424,7 @@
 }
 @media only screen and (max-width: 649px) {
   .about__content-card {
-    padding-left: 50px;
+    padding-left: 70px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -450,7 +450,7 @@
 }
 @media only screen and (max-width: 1023px) {
   .result__films {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 .result__title {
