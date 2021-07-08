@@ -5,10 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.main {
-  width: 100%;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -55,7 +51,7 @@
   color: white;
 }
 .header__search-icon {
-  display: inline-block;
+  display: block;
   height: 50px;
   width: 50px;
   font-size: 36px;
@@ -166,11 +162,18 @@
   justify-content: space-evenly;
 }
 .trending__link {
+  display: block;
   text-decoration: none;
 }
 .trending__link:hover {
   transform: scale(1.2);
   transition: 0.5s;
+}
+@media only screen and (max-width: 649px) {
+  .trending__link {
+    height: 160px;
+    margin-bottom: 20px;
+  }
 }
 .trending__item {
   width: 200px;
