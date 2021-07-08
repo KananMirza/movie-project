@@ -51,7 +51,12 @@
         }
 
         &-icon {
-            font-size: 41px;
+            display: inline-block;
+           height: 50px;
+           width: 50px;
+           font-size: 36px;
+           text-align: center;
+           padding-top: 5px;
             float: right;
             background-color: $bg-search;
             color: $txt-color;
