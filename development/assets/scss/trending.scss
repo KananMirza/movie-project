@@ -50,8 +50,8 @@
         }
         @include mq(mobile, max) {
             &{
-                height: 160px;
-                margin-bottom: 20px;
+                height: 150px;
+                margin-bottom: 30px;
             }
     
         }
