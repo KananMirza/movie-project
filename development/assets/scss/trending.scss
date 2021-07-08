@@ -42,20 +42,11 @@
         
     }
     &__link{
-        display: block;
         text-decoration: none;
         &:hover{
             transform: scale(1.2);
             transition: 0.5s;
         }
-        @include mq(mobile, max) {
-            &{
-                height: 150px;
-                margin-bottom: 30px;
-            }
-    
-        }
-        
     }
     
 

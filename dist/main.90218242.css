@@ -162,18 +162,11 @@
   justify-content: space-evenly;
 }
 .trending__link {
-  display: block;
   text-decoration: none;
 }
 .trending__link:hover {
   transform: scale(1.2);
   transition: 0.5s;
-}
-@media only screen and (max-width: 649px) {
-  .trending__link {
-    height: 150px;
-    margin-bottom: 30px;
-  }
 }
 .trending__item {
   width: 200px;
