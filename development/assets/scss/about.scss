@@ -122,7 +122,7 @@
         }
 
         &-card {
-            width: 950px;
+           
             font-size: 36px;
             padding-top: 200px;
             padding-left: 70px;
@@ -146,15 +146,29 @@
     &__subtitle {
         @include mq(tablet, max) {
             & {
+                font-size: 24px;
+            }
+        }
+        @include mq(mobile, max) {
+            & {
                 font-size: 15px;
             }
         }
     }
 
-    @include mq(tablet, max) {
-        &__article {
-            font-size: 15px;
-            margin-top: 20px;
+    &__article{
+        @include mq(tablet, max) {
+            & {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+        @include mq(mobile, max) {
+            & {
+                font-size: 15px;
+                margin-top: 20px;
+            }
         }
     }
+    
 }
