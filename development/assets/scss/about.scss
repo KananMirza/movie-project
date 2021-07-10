@@ -24,6 +24,7 @@
         @include mq(mobile, max) {
             & {
                 flex-direction: column;
+              
             }
         }
     }
@@ -120,7 +121,6 @@
             @include mq(mobile, max) {
                 & {
                     width: 300px;
-                    
                 }
             }
         }
@@ -130,13 +130,13 @@
         
         @include mq(tablet, max) {
             & {
-               
                 font-size: 24px;
             }
         }
     }
 
     &__article{
+        width: 80%;
         @include mq(tablet, max) {
             & {
                 font-size: 24px;
