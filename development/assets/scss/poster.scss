@@ -10,17 +10,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     &__article {
         width: 100%;
         color: $txt-color;
         margin-bottom: 50px;
-
-
-
-
+        
     }
-
     &__title {
         font-size: 60px;
         text-transform: capitalize;
@@ -28,31 +23,26 @@
         @include mq(tablet, max) {
             & {
                 font-size: 48px;
-                width: 120px;
             }
-
         }
+        
     }
-
     &__content {
         margin-top: 20px;
         font-size: 24px;
         font-weight: bold;
-
         @include mq(mobile, max) {
             & {
                 display: none;
             }
-
         }
+        
     }
-
     &__rating {
         margin-bottom: 50px;
         display: flex;
         flex-direction: row;
     }
-
     &__star {
         color: $txt-color;
         font-size: 24px;
@@ -61,11 +51,8 @@
             & {
                 font-size: 36px;
             }
-
         }
-        
     }
-
     &__value {
         color: $txt-color;
         font-size: 24px;
@@ -75,8 +62,6 @@
             & {
                 font-size: 36px;
             }
-
         }
     }
-
 }

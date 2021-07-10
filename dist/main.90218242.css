@@ -93,7 +93,6 @@
 @media only screen and (max-width: 1023px) {
   .poster__title {
     font-size: 48px;
-    width: 120px;
   }
 }
 .poster__content {
@@ -150,6 +149,7 @@
 }
 .trending__title {
   font-size: 48px;
+  margin-left: 15px;
 }
 @media only screen and (max-width: 649px) {
   .trending__title {
@@ -329,7 +329,7 @@
 }
 @media only screen and (max-width: 1023px) {
   .about__movie {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 649px) {
@@ -407,7 +407,7 @@
   color: white;
   display: flex;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 649px) {
   .about__content {
     padding-top: 75px;
   }
@@ -420,12 +420,13 @@
 }
 @media only screen and (max-width: 1023px) {
   .about__content-card {
-    width: 300px;
-    padding-left: 100px;
+    padding-left: 80px;
+    padding-right: 20px;
   }
 }
 @media only screen and (max-width: 649px) {
   .about__content-card {
+    width: 300px;
     padding-left: 70px;
   }
 }

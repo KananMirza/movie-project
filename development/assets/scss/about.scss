@@ -1,17 +1,14 @@
 .about {
-
     &__poster {
         background-image: url(https://d3dh6of9cnaq4t.cloudfront.net/Pictures/480x270//6/3/0/15630_intl_wdwmn2_vert_tsr_intl_2764x4096widescreencropuseaspicturelayout_396346.jpg);
-      
         height: 500px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         position: relative;
         color: $txt-color;
-        background-size:cover;
-        background-position:center;
-
+        background-size: cover;
+        background-position: center;
     }
 
     &__movie {
@@ -22,29 +19,23 @@
         position: absolute;
         top: 340px;
         left: 80px;
+
         @include mq(tablet, max) {
-            &{
-                flex-direction: column;
-               
+            & {
+                flex-direction: row;
             }
-    
         }
+
         @include mq(mobile, max) {
-            &{
+            & {
                 flex-direction: column;
                 left: 60px;
-               
             }
-    
         }
-
     }
-
 
     &__image {
         height: 300px;
-        
-
     }
 
     &__trailer {
@@ -54,19 +45,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        
     }
 
-    &__title{
+    &__title {
         font-size: 36px;
+
         @include mq(tablet, max) {
-            &{
-                font-size: 20px;    
-                padding-right: 5px;   
-                padding-top: 20px;        
+            & {
+                font-size: 20px;
+                padding-right: 5px;
+                padding-top: 20px;
             }
-    
         }
     }
 
@@ -74,17 +63,14 @@
         display: flex;
         flex-direction: row;
         margin-top: 10px;
-       
-        
-        
 
         &-item {
             margin-right: 25px;
+
             @include mq(tablet, max) {
-                &{
-                  margin-right: 15px;
+                & {
+                    margin-right: 15px;
                 }
-        
             }
         }
     }
@@ -100,7 +86,7 @@
         padding-top: 15px;
     }
 
-    &__btn{
+    &__btn {
         background-color: $btn-color;
         width: 200px;
         height: 50px;
@@ -109,76 +95,66 @@
         font-size: 24px;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             opacity: 0.8;
             transition: 0.5s;
         }
 
         @include mq(tablet, max) {
-            &{
-              width: 75px;
-              font-size: 10px;
-              font-weight: bold;
-
+            & {
+                width: 75px;
+                font-size: 10px;
+                font-weight: bold;
             }
-    
         }
-        
     }
 
-    &__content{
+    &__content {
         height: 500px;
         background-color: $tg-bgcolor;
         color: $txt-color;
         display: flex;
-        @include mq(tablet, max) {
-            &{
+
+        @include mq(mobile, max) {
+            & {
                 padding-top: 75px;
-                
-            
             }
-    
         }
-        &-card{
+
+        &-card {
             width: 950px;
             font-size: 36px;
             padding-top: 200px;
             padding-left: 70px;
+
             @include mq(tablet, max) {
-                &{
-                    width: 300px;
-                    padding-left: 100px;
+                & {
+                    padding-left: 80px;
+                    padding-right: 20px;
                 }
-        
             }
+
             @include mq(mobile, max) {
-                &{
-                    
+                & {
+                    width: 300px;
                     padding-left: 70px;
-                   
                 }
-        
             }
-            
         }
     }
-    &__subtitle{
+
+    &__subtitle {
         @include mq(tablet, max) {
-            &{
+            & {
                 font-size: 15px;
             }
-    
         }
     }
-    
 
     @include mq(tablet, max) {
-        &__article{
+        &__article {
             font-size: 15px;
             margin-top: 20px;
-            
         }
-
     }
-    
 }

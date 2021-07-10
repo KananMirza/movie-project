@@ -1,56 +1,50 @@
-.trending{
+.trending {
     padding-bottom: 50px;
     background-color: $tg-bgcolor;
     color: $txt-color;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @include mq(mobile, max) {
-        &{
+        & {
             background-color: $tg-licolor;
         }
-
     }
 
     // movies section start
-
-    &__movies{
+    &__movies {
         padding-top: 50px;
+    }
 
+    &__title {
+        font-size: 48px;
+        margin-left: 15px;
 
-        }
-
-        &__title{
-            font-size: 48px;
-            @include mq(mobile, max) {
-                &{
-                    font-size: 24px;
-                   text-align: center;
-                }
-        
+        @include mq(mobile, max) {
+            & {
+                font-size: 24px;
+                text-align: center;
             }
-            
         }
+    }
 
-    &__list{
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        
-        
-        
-        
     }
-    &__link{
+
+    &__link {
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
             transition: 0.5s;
         }
     }
-    
 
-    &__item{
+    &__item {
         width: 200px;
         color: $tg-color;
         background-color: $tg-licolor;
@@ -58,42 +52,37 @@
         flex-direction: column;
         margin-right: 30px;
         margin-top: 35px;
+
         @include mq(mobile, max) {
-            &{
+            & {
                 width: 90px;
                 margin-right: 10px;
             }
-    
         }
-        
-    }
-    
-        
-    
-    
-
-    &__about{
-       display: flex;
-       flex-direction: column;
-      padding: 10px;
-      
     }
 
-    &__subtitle{
+    &__about {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    &__subtitle {
         @include mq(mobile, max) {
-            &{
+            & {
                 font-size: 10px;
             }
-    
         }
     }
-    &__date{
+
+    &__date {
         margin-top: 5px;
+
         @include mq(mobile, max) {
-            &{
+            & {
                 font-size: 10px;
             }
-    
         }
     }
 
@@ -101,9 +90,7 @@
 
     // tvs section start
 
-    &__tvs{
+    &__tvs {
         padding-top: 50px;
-        
     }
-    
 }
