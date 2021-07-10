@@ -20,11 +20,12 @@
     &__title {
         font-size: 48px;
         margin-left: 15px;
+        text-align: center;
 
         @include mq(mobile, max) {
             & {
                 font-size: 24px;
-                text-align: center;
+                
             }
         }
     }
