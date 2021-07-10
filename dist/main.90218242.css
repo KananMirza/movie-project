@@ -184,10 +184,18 @@
     margin-right: 10px;
   }
 }
+@media only screen and (max-width: 649px) {
+  .trending__image {
+    height: 100px;
+  }
+}
 .trending__about {
   display: flex;
   flex-direction: column;
   padding: 10px;
+}
+.trending__subtitle {
+  font-weight: bold;
 }
 @media only screen and (max-width: 649px) {
   .trending__subtitle {
@@ -196,6 +204,7 @@
 }
 .trending__date {
   margin-top: 5px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 649px) {
   .trending__date {

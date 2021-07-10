@@ -60,6 +60,14 @@
             }
         }
     }
+    &__image{
+        @include mq(mobile, max) {
+            & {
+                height: 100px;
+            }
+        }
+
+    }
 
     &__about {
         display: flex;
@@ -69,6 +77,7 @@
     }
 
     &__subtitle {
+        font-weight: bold;
         @include mq(mobile, max) {
             & {
                 font-size: 10px;
@@ -78,6 +87,7 @@
 
     &__date {
         margin-top: 5px;
+        font-weight: bold;
 
         @include mq(mobile, max) {
             & {
