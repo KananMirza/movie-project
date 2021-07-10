@@ -4,23 +4,22 @@
     background-color: $tg-bgcolor;
 
     &__films{
+        display: flex;
+        flex-direction: column;
+       
         color:$txt-color;
-        padding-left: 70px;
-        @include mq(tablet, max) {
-            & {
-               padding-left: 20px;
-            }
-
-        }
+      
+       
     }
 
     &__title{
         font-size: 48px;
         margin-top: 50px;
+        text-align: center;
         @include mq(tablet, max) {
             & {
                 font-size: 24px;
-                text-align: center;
+                
             }
 
         }
@@ -28,6 +27,7 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         margin-bottom: 50px;
     } 
 
@@ -55,6 +55,18 @@
 
         }
     }
+
+    &__image{
+        width: 200px;
+        @include mq(mobile, max) {
+            & {
+                width: 100px;
+                height: 110px;
+            }
+        }
+
+    }
+
     &__about{
         display: flex;
         flex-direction: column;

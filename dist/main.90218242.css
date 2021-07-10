@@ -470,27 +470,24 @@
   background-color: black;
 }
 .result__films {
+  display: flex;
+  flex-direction: column;
   color: white;
-  padding-left: 70px;
-}
-@media only screen and (max-width: 1023px) {
-  .result__films {
-    padding-left: 20px;
-  }
 }
 .result__title {
   font-size: 48px;
   margin-top: 50px;
+  text-align: center;
 }
 @media only screen and (max-width: 1023px) {
   .result__title {
     font-size: 24px;
-    text-align: center;
   }
 }
 .result__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-bottom: 50px;
 }
 .result__link {
@@ -513,6 +510,15 @@
   .result__item {
     width: 100px;
     margin-right: 10px;
+  }
+}
+.result__image {
+  width: 200px;
+}
+@media only screen and (max-width: 649px) {
+  .result__image {
+    width: 100px;
+    height: 110px;
   }
 }
 .result__about {
