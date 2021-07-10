@@ -325,7 +325,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative;
+  justify-content: center;
   color: white;
   background-size: cover;
   background-position: center;
@@ -335,18 +335,12 @@
   align-items: flex-end;
   justify-content: center;
   position: absolute;
-  top: 340px;
+  top: 430px;
   left: 80px;
-}
-@media only screen and (max-width: 1023px) {
-  .about__movie {
-    flex-direction: row;
-  }
 }
 @media only screen and (max-width: 649px) {
   .about__movie {
     flex-direction: column;
-    left: 60px;
   }
 }
 .about__image {
@@ -357,8 +351,6 @@
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .about__title {
   font-size: 36px;
@@ -402,7 +394,7 @@
   font-weight: bold;
 }
 .about__btn:hover {
-  opacity: 0.8;
+  opacity: 0.5;
   transition: 0.5s;
 }
 @media only screen and (max-width: 649px) {
@@ -413,15 +405,14 @@
   }
 }
 .about__content {
-  height: 500px;
   background-color: black;
   color: white;
-  display: flex;
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 649px) {
   .about__content {
     padding-top: 75px;
-    padding-left: 2px;
+    padding-left: 25px;
   }
 }
 .about__content-card {
@@ -429,26 +420,14 @@
   padding-top: 200px;
   padding-left: 70px;
 }
-@media only screen and (max-width: 1023px) {
-  .about__content-card {
-    padding-left: 80px;
-    padding-right: 20px;
-  }
-}
 @media only screen and (max-width: 649px) {
   .about__content-card {
     width: 300px;
-    padding-left: 70px;
   }
 }
 @media only screen and (max-width: 1023px) {
   .about__subtitle {
     font-size: 24px;
-  }
-}
-@media only screen and (max-width: 649px) {
-  .about__subtitle {
-    font-size: 15px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -459,8 +438,7 @@
 }
 @media only screen and (max-width: 649px) {
   .about__article {
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 16px;
   }
 }
 
@@ -487,8 +465,11 @@
 .result__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   margin-bottom: 50px;
+  justify-content: center;
+}
+.result__list:last-child {
+  align-self: flex-start;
 }
 .result__link {
   text-decoration: none;
@@ -525,7 +506,6 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
-  padding-left: 5px;
 }
 .result__subtitle {
   font-weight: bold;

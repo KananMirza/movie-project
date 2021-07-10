@@ -5,7 +5,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        position: relative;
+        justify-content: center;
+        
         color: $txt-color;
         background-size: cover;
         background-position: center;
@@ -17,19 +18,12 @@
         justify-content: center;
 
         position: absolute;
-        top: 340px;
+        top: 430px;
         left: 80px;
-
-        @include mq(tablet, max) {
-            & {
-                flex-direction: row;
-            }
-        }
 
         @include mq(mobile, max) {
             & {
                 flex-direction: column;
-                left: 60px;
             }
         }
     }
@@ -43,8 +37,6 @@
         padding-left: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     &__title {
@@ -71,8 +63,6 @@
                 }
             }
         }
-
-        
     }
 
     &__icon {
@@ -97,7 +87,7 @@
         font-weight: bold;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.5;
             transition: 0.5s;
         }
 
@@ -108,19 +98,17 @@
                 font-weight: bold;
             }
         }
-        
     }
 
     &__content {
-        height: 500px;
         background-color: $tg-bgcolor;
         color: $txt-color;
-        display: flex;
-
+        padding-bottom: 50px;
+        
         @include mq(mobile, max) {
             & {
                 padding-top: 75px;
-                padding-left: 2px;
+                padding-left:25px;
             }
         }
 
@@ -129,32 +117,21 @@
             font-size: 36px;
             padding-top: 200px;
             padding-left: 70px;
-
-            @include mq(tablet, max) {
-                & {
-                    padding-left: 80px;
-                    padding-right: 20px;
-                }
-            }
-
             @include mq(mobile, max) {
                 & {
                     width: 300px;
-                    padding-left: 70px;
+                    
                 }
             }
         }
     }
 
     &__subtitle {
+        
         @include mq(tablet, max) {
             & {
+               
                 font-size: 24px;
-            }
-        }
-        @include mq(mobile, max) {
-            & {
-                font-size: 15px;
             }
         }
     }
@@ -168,8 +145,7 @@
         }
         @include mq(mobile, max) {
             & {
-                font-size: 15px;
-                margin-top: 20px;
+                font-size: 16px;
             }
         }
     }
