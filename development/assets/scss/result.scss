@@ -76,6 +76,7 @@
 
     
     &__subtitle{
+        font-weight: bold;
         @include mq(tablet, max) {
             & {
                font-size: 10px;
@@ -84,6 +85,7 @@
         }
     }
     &__date{
+        font-weight: bold;
         @include mq(tablet, max) {
             & {
                 font-size: 10px;

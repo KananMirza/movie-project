@@ -526,10 +526,16 @@
   flex-direction: column;
   padding: 15px;
 }
+.result__subtitle {
+  font-weight: bold;
+}
 @media only screen and (max-width: 1023px) {
   .result__subtitle {
     font-size: 10px;
   }
+}
+.result__date {
+  font-weight: bold;
 }
 @media only screen and (max-width: 1023px) {
   .result__date {
