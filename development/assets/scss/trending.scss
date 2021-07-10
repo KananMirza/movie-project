@@ -45,7 +45,7 @@
     }
 
     &__item {
-        width: 200px;
+        
         color: $tg-color;
         background-color: $tg-licolor;
         display: flex;
@@ -61,9 +61,11 @@
         }
     }
     &__image{
+        width: 200px;
         @include mq(mobile, max) {
             & {
-                height: 100px;
+                width: 90px;
+                height: 110px;
             }
         }
 

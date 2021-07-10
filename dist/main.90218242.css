@@ -170,7 +170,6 @@
   transition: 0.5s;
 }
 .trending__item {
-  width: 200px;
   color: #B6B6B6;
   background-color: #050E12;
   display: flex;
@@ -184,9 +183,13 @@
     margin-right: 10px;
   }
 }
+.trending__image {
+  width: 200px;
+}
 @media only screen and (max-width: 649px) {
   .trending__image {
-    height: 100px;
+    width: 90px;
+    height: 110px;
   }
 }
 .trending__about {
