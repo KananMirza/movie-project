@@ -81,7 +81,7 @@
         font-weight: bold;
         @include mq(mobile, max) {
             & {
-                font-size: 9px;
+                font-size: 10px;
             }
         }
     }
@@ -92,7 +92,7 @@
 
         @include mq(mobile, max) {
             & {
-                font-size: 9px;
+                font-size: 10px;
             }
         }
     }

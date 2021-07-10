@@ -201,7 +201,7 @@
 }
 @media only screen and (max-width: 649px) {
   .trending__subtitle {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 .trending__date {
@@ -210,7 +210,7 @@
 }
 @media only screen and (max-width: 649px) {
   .trending__date {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 .trending__tvs {
