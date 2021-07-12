@@ -9,7 +9,13 @@
         
         color: $txt-color;
         background-size: cover;
-        background-position: center;
+        
+
+        @include mq(tablet, max) {
+            & {
+                background-position: center;
+            }
+        }
     }
 
     &__movie {
@@ -24,6 +30,7 @@
         @include mq(mobile, max) {
             & {
                 flex-direction: column;
+                left: 20%;
               
             }
         }
