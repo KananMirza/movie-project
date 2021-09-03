@@ -37,7 +37,7 @@
   padding-left: 5px;
   border-radius: 8px 0px 0px 8px;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 649px) {
   .header__search-area {
     display: none;
   }
@@ -62,7 +62,7 @@
   color: white;
   border-radius: 0px 8px 8px 0px;
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 649px) {
   .header__search-icon {
     background-color: #1A1F38;
   }
