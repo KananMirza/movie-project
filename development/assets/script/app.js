@@ -1,10 +1,29 @@
 import header from './header.js';
 
 function getdataText(){
-     fetch('https://api.themoviedb.org/3/movie/popular?api_key=92d9b5ed56e1b3fa6560470920e30f22')
-    .then(response=>{
-        console.log(response.text())
+    fetch('https://api.themoviedb.org/3/movie/popular?api_key=92d9b5ed56e1b3fa6560470920e30f22')
+    .then(response => response.json())
+    .then(json =>{
+        let movie = '';
+        for(let i=0;i<=12;i++){
+            movie +=`<div class="trending__list">
+            <a href="" class="trending__link">
+              <div class="trending__item">
+                  <img src="https://i.pinimg.com/236x/8d/36/a6/8d36a6e0c7a6fb251682b3f0e1856a03.jpg" alt="" class="trending__image">
+                <div class="trending__about">
+                  <p class="trending__subtitle">${json.results[i].original_title}</p>
+                  <time class="trending__date"> ${json.results[i].release_date}</div>
+              </div>
+          </div>`
+        }
+        document.getElementById("mv").innerHTML = movie
     })
+    
     }
+
+
+
+
+
 
     getdataText();
