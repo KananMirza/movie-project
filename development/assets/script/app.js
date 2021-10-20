@@ -5,18 +5,19 @@ function getdataText(){
     .then(response => response.json())
     .then(json =>{
         let movie = '';
-        for(let i=0;i<=12;i++){
-            movie +=`<div class="trending__list">
-            <a href="" class="trending__link">
-              <div class="trending__item">
-                  <img src="https://i.pinimg.com/236x/8d/36/a6/8d36a6e0c7a6fb251682b3f0e1856a03.jpg" alt="" class="trending__image">
-                <div class="trending__about">
-                  <p class="trending__subtitle">${json.results[i].original_title}</p>
-                  <time class="trending__date"> ${json.results[i].release_date}</div>
-              </div>
-          </div>`
-        }
-        document.getElementById("mv").innerHTML = movie
+        for(let i=0;i<=11;i++){
+            movie +=`<a href="" class="trending__link">
+            <div class="trending__item">
+            <img src="https://i.pinimg.com/236x/8d/36/a6/8d36a6e0c7a6fb251682b3f0e1856a03.jpg" alt="" class="trending__image">
+            <div class="trending__about">
+            <p class="trending__subtitle">${json.results[i].original_title}</p>
+            <p class="trending__date"> ${json.results[i].release_date}
+            </div>
+            </div>`
+          }
+          console.log(json.results)
+        document.getElementsByClassName("trending__list")[0].innerHTML = movie
+        
     })
     
     }

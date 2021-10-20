@@ -132,11 +132,12 @@ function getdataText() {
   }).then(function (json) {
     var movie = '';
 
-    for (var i = 0; i <= 12; i++) {
-      movie += "<div class=\"trending__list\">\n            <a href=\"\" class=\"trending__link\">\n              <div class=\"trending__item\">\n                  <img src=\"https://i.pinimg.com/236x/8d/36/a6/8d36a6e0c7a6fb251682b3f0e1856a03.jpg\" alt=\"\" class=\"trending__image\">\n                <div class=\"trending__about\">\n                  <p class=\"trending__subtitle\">".concat(json.results[i].original_title, "</p>\n                  <time class=\"trending__date\"> ").concat(json.results[i].release_date, "</div>\n              </div>\n          </div>");
+    for (var i = 0; i <= 11; i++) {
+      movie += "<a href=\"\" class=\"trending__link\">\n            <div class=\"trending__item\">\n            <img src=\"https://i.pinimg.com/236x/8d/36/a6/8d36a6e0c7a6fb251682b3f0e1856a03.jpg\" alt=\"\" class=\"trending__image\">\n            <div class=\"trending__about\">\n            <p class=\"trending__subtitle\">".concat(json.results[i].original_title, "</p>\n            <p class=\"trending__date\"> ").concat(json.results[i].release_date, "\n            </div>\n            </div>");
     }
 
-    document.getElementById("mv").innerHTML = movie;
+    console.log(json.results);
+    document.getElementsByClassName("trending__list")[0].innerHTML = movie;
   });
 }
 
@@ -169,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52592" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59874" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
